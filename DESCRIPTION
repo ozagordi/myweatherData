@@ -12,6 +12,7 @@ Suggests:
     testthat
 Imports:
     plyr
+    curl
 Maintainer: Ram Narasimhan <ramnarasimhan@gmail.com>
 LazyData: TRUE
 License: GPL
