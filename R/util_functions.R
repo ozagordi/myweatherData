@@ -1,10 +1,11 @@
+require(curl)
 readUrl <- function(final_url) {
   out <- tryCatch({
     #if you want to use more than one R expression in the "try" part use {}
     # 'tryCatch()' will return the last evaluated expression 
     # in case the "try" part was completed successfully  
     #message("This is the 'try' part")  
-    u <- url(final_url)  
+    u <- curl(final_url)  
     # readLines(u, warn=FALSE) 
     readLines(u) 
     # The return value of `readLines()` is the actual value 
