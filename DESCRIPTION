@@ -11,7 +11,7 @@ Author: Ram Narasimhan
 Suggests:
     testthat
 Imports:
-    plyr
+    plyr,
     curl
 Maintainer: Ram Narasimhan <ramnarasimhan@gmail.com>
 LazyData: TRUE
