@@ -1,5 +1,5 @@
 require(plyr)
-
+require(curl)
 #' @title Gets weather data for a single date (All records)
 #' 
 #' @description Given a valid station and a single date this function
