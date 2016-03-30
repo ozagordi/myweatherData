@@ -1,4 +1,5 @@
 require(plyr)
+require(curl)
 #' @title Check if WeatherUnderground has Data for given station and date
 #' 
 #' @description Use this function to check if data is available for station and date
