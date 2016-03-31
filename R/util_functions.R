@@ -4,7 +4,9 @@ readUrl <- function(final_url) {
     # 'tryCatch()' will return the last evaluated expression 
     # in case the "try" part was completed successfully  
     #message("This is the 'try' part")  
-    u <- curl::curl(final_url)
+    h <- new_handle()
+    handle_setopt(h, timeout = 20)
+    u <- curl::curl(final_url, h)
     readLines(u, warn=FALSE)
     # readLines(u) 
     # The return value of `readLines()` is the actual value 

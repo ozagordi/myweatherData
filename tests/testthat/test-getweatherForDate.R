@@ -12,14 +12,14 @@ test_that("Unreasonable Column Number Error", {
 
 
 test_that("Just get everything Test", {
-  d3<- getWeatherForDate("CWWF", 
-                         start_date="2014-03-01", 
-                         end_date = "2014-03-03", 
-                         opt_detailed = TRUE, 
-                         opt_all_columns = TRUE)
-  expect_that(d3, is_a("data.frame"))
-  expect_that(nrow(d3), equals(84))
-  expect_that(ncol(d3), equals(15)) 
+  d3 <- getWeatherForDate("CWWF", 
+                          start_date="2014-03-01", 
+                          end_date = "2014-03-03", 
+                          opt_detailed = TRUE, 
+                          opt_all_columns = TRUE)
+  expect_is(d3, "data.frame", info = "data frame")
+  expect_equal(nrow(d3), 84, info = "84 rows")
+  expect_equal(ncol(d3), 15, info = "15 columns")
 })
 
 
