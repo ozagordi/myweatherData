@@ -28,7 +28,6 @@ Load the library
 library(weatherData)
 ```
 
-
 Windows users must also first install
 [Rtools](http://cran.rstudio.com/bin/windows/Rtools/).
 
