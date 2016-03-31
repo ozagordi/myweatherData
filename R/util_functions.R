@@ -5,8 +5,8 @@ readUrl <- function(final_url) {
     # in case the "try" part was completed successfully  
     #message("This is the 'try' part")  
     u <- curl::curl(final_url)
-    # readLines(u, warn=FALSE)
-    readLines(u) 
+    readLines(u, warn=FALSE)
+    # readLines(u) 
     # The return value of `readLines()` is the actual value 
     # that will be returned in case there is no condition 
     # (e.g. warning or error). 
