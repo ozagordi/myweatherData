@@ -7,7 +7,6 @@ test_that("Data is available for MCI", {
   expect_equal(cDA, 1)
   })
 
-
 test_that("Must supply a date", {
   expect_error(
     getDetailedWeather("KBUF"), '"date" is missing'

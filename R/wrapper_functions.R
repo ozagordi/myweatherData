@@ -285,8 +285,8 @@ getWeatherForDate <- function(station_id,
                                           custom_columns,
                                           opt_compress_output=FALSE,
                                           opt_verbose,
-                                          opt_warnings=TRUE) 
-        
+                                          opt_warnings=TRUE)
+
       message(paste(station_id, i, date.range[i], ": Fetching",
                     nrow(single_day_df), "Rows" , "with",
                     ncol(single_day_df), "Column(s)" )
