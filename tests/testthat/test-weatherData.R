@@ -1,6 +1,5 @@
 context("DetailedWeather")
 
-
 test_that("Data is available for MCI", {
   cDA <- checkDataAvailabilityForDateRange("MCI", 
                                     "2013-02-02", 

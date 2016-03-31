@@ -202,6 +202,7 @@ checkSummarizedDataAvailability<- function (station_id,
 #'   found by visiting the weatherUnderground URL, and counting from 1. Note that if \code{opt_custom_columns} is TRUE, 
 #'   then \code{custom_columns} must be specified.
 #' @import plyr
+#' @import curl
 #' @references For a list of valid Weather Stations, try this format
 #'  \url{http://www.wunderground.com/weatherstation/ListStations.asp?selectedCountry=United+States}
 #'  and replace with your country of interest
